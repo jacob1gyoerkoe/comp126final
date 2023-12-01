@@ -1,0 +1,44 @@
+header{
+    background-color: #5FBFF9;
+}
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 45pt;
+    padding: 2%;
+    color: #171D1C;
+}
+.navs{
+    display: flex;
+    width: 45%;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+.navitems{
+    text-align: center;
+    color: #5FBFF9;
+    background-color: #EFE9F4;
+    padding: 3%;
+    width: 18%;
+    font-family: 'Playfair Display', serif;
+    font-size: 16pt;
+    border-radius: 8%;
+    transition: background-color 300ms;
+    transition: color 300ms;
+    height: 85%;
+    border: 2px solid #5FBFF9
+}
+.reservation{
+    width: 29%;
+}
+.heads{
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    background-color: #EFE9F4;
+}
+.navitems:hover{
+    border: 2px solid #EFE9F4;
+    background-color: #5FBFF9;
+    color: #EFE9F4;
+}
