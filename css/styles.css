@@ -33,9 +33,11 @@ p{
     display: flex;
     padding: .5%;
     justify-content: space-between;
-    width: auto;
+    width: 50%;
+    align-items: center;
 }
-.navitems, .nav{
+.navitems{
+    display: flex;
     color: #FBFBFB !important;
     background-color: #0F1103;
     font-family: 'Playfair Display', serif;
@@ -47,9 +49,10 @@ p{
     list-style: none;
     text-decoration: none;
     padding: 4%;
-    text-align: center;
     height: 50px;
     width: auto;
+    align-items: center;
+    justify-content: center;
 }
 a{
     color: #FBFBFB !important;
@@ -57,7 +60,6 @@ a{
 }
 .navitems:hover{
     background-color: #5C6D70;
-    border: none;
 }
 .headerM{
     text-align: center;
@@ -76,10 +78,43 @@ a{
     text-align: center;
 }
 .reserveN{
-    width:25%;
-    height: 6%;
+    width: 40%;
+    height: 50px;
     background-color: #2F1000;
     text-align: center;
+    color:#FBFBFB;
+    margin: 2%;
+    border-radius: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 300ms;
+    transition: color 300ms;
+}
+.reserveN:hover a{
+    background-color: #FBFBFB;
+    color: #2F1000!important;
+}
+.reserveN:hover{
+    border: 2px solid #2F1000;
+    background-color: #FBFBFB;
+}
+@media screen and (min-width: 700px){
+    .reserveN{
+        width: 30%;
+        border-radius: 7%;
+    }
+    .navs{
+        width: 35%
+    }
+}
+@media screen and (min-width: 900px){
+    .reserveN{
+        width: 20%;
+        border-radius: 5%;
+    }
+    .navs{
+        width: 25%
+    }
 }
 footer{
     background-color: black;
@@ -87,7 +122,7 @@ footer{
     text-align: center;
 }
 .footerM{
-    padding: 0%;
+    padding: 0%!important;
     font-size: 14pt; 
     padding: 1%;
 }
@@ -96,11 +131,28 @@ footer{
     font-family: 'Playfair Display', serif;
     font-size: 28pt;
 }
-.container {
+.container6 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     text-align: center;
+    color: #0F1103;
+}
+.container4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    color: #0F1103;
+
+}
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    color: #0F1103;
+
 }
 .item1{
     grid-column: 1 / 2;
@@ -126,51 +178,108 @@ footer{
     grid-column: 2 / 3;
     grid-row: 3 / 4;
 }
-.menu{
-    h1 {
-      color: #fff;
-    }
-    .menu-category {
-      margin-top: 20px;
-    }
-    .menu-button {
-      position: relative;
-      overflow: hidden;
-      margin-bottom: 20px;
-    }
-    .menu-button img {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 10%;
-      height: 10%;
-      transition: opacity 0.5 ease-in-out;
-      opacity: 0;
-    }
-    .menu-button:hover img {
-      opacity: 10;
-    }
-
+.menuT{
+    text-align: center;
+    color: #B96D40;
+    font-family:'Playfair Display', serif;
+    
 }
 
+.buttonzz{
+    display: flex;
+    justify-content: center;
+}
+.Scroll {
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 800px){
+    .Scroll{
+        width:800px;
+    }
+}
 
+#menuImage {
+    animation: scrollImage 10s linear infinite; 
+}
 
+@keyframes scrollImage {
+    0% {
+        transform: translateX(0);
+    }
 
+    100% {
+        transform: translateX(-2400px);
+    }
+}
 /* start of reservations css */
-
-
+.cardtitle1{
+    font-family: 'Playfair Display', serif;
+    font-size: 28pt;
+}
+.cardtext1{
+    font-family: 'Lato', serif;
+    font-size: 20pt;
+}
+.button1{
+    font-family: 'Playfair Display', serif;
+    font-size: 16pt;
+    transition: background-color 300ms;
+    transition: color 300ms;
+    background-color: #2F1000!important;
+}
+.button1:hover{
+    color: #2F1000!important;
+    border: 2px solid #2F1000!important;
+    background-color: #FBFBFB!important;
+}
+.button1:hover a{
+    color: #2F1000!important;
+}
+.cardtext2{
+    font-family: 'Lato', serif;
+    font-size: 14pt;
+}
 /* end of reservations css */
 
 /* start of about css */
 .aboutform{
-    background-color: #B96D40;
+    background-color: #5C6D70;
+    padding: 2%;
+    margin: 2%;
 }
 .aboutbutton{
     background-color: #2F1000!important;
+    transition: background-color 300ms;
+    transition: color 300ms;
+    background-color: #2F1000!important;
 }
-#messagespacing{
-    min-height:200px!important;
+.aboutbutton:hover{
+    color: #2F1000!important;
+    border: 2px solid #2F1000!important;
+    background-color: #FBFBFB!important;
 }
-
+.aboutbutton:hover a{
+    color: #2F1000!important;
+}
+.aboutformh2{
+    font-family: 'Playfair Display', serif;
+    font-size: 24pt;
+}
+.form-label{
+    font-family: 'Lato', serif;
+    font-size: 14pt;
+}
+.formcontrol1{
+    padding: 5%!important;
+}
 /* end of about css */
 
+.dinnerz{
+    text-align: center;
+    font-size: 45px;
+}
